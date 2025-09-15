@@ -1,0 +1,378 @@
+/* ===== RESET GENERAL ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ===== ESTILO BASE ===== */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: #FAFAFA;
+    padding-top: 60px; /* espacio por el banner fijo */
+  }
+  
+  /* ===== ENCABEZADOS ===== */
+  h1 { font-size: 32px; margin-bottom: 10px; }
+  h2 { font-size: 24px; margin: 15px 0; }
+  h3 { font-size: 20px; margin: 10px 0; }
+  
+  /* ===== BANNER FIJO SUPERIOR ===== */
+  .banner {
+    background: #0D47A1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-weight: bold;
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* ===== NAVBAR ===== */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #1976D2;
+    padding: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #BBDEFB;
+  }
+  
+  nav ul li a.activo {
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* ===== MAIN ===== */
+  main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  /* Estilos para párrafos dentro de main */
+  main p {
+    margin-bottom: 10px;
+  }
+  
+  /* ===== SECCIÓN INTRO ===== */
+  #intro {
+    background: #E3F2FD;
+    border: 1px solid #BBDEFB;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* ===== CHIPS ===== */
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .chip {
+    background: #2196F3;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .chip:hover {
+    background: #1976D2;
+    cursor: pointer;
+  }
+  
+  /* ===== TARJETAS DEL BLOG ===== */
+  .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .tarjeta {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .tarjeta h3 {
+    margin-bottom: 10px;
+    color: #0D47A1;
+  }
+  
+  .tarjeta p {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .tarjeta a {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #1976D2;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .tarjeta a:hover {
+    background: #0D47A1;
+  }
+  
+  /* Badge para destacar etiquetas como "Nuevo" */
+  .contenedor-relativo {
+    position: relative;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FF5252;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer {
+    background: #212121;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .chips {
+      justify-content: center;
+    }
+  }
+  /* ===== GALERÍA ===== */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .grid-galeria .item {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .grid-galeria .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .grid-galeria img {
+    width: 100%;
+    height: 250px; /* Tamaño uniforme */
+    object-fit: cover;
+    display: block;
+  }
+  /* ===== TABLAS ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  thead {
+    background: #1976D2;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #E3F2FD;
+  }
+  
+  tbody tr:hover {
+    background: #BBDEFB;
+  }
+  /* ===== FORMULARIO ===== */
+.form-contacto {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin-top: 20px;
+  }
+  
+  .form-grupo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-grupo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-grupo input,
+  .form-grupo select,
+  .form-grupo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+  }
+  
+  .form-grupo input:focus,
+  .form-grupo select:focus,
+  .form-grupo textarea:focus {
+    outline: none;
+    border: 1px solid #1976D2;
+    box-shadow: 0 0 4px rgba(25,118,210,0.5);
+  }
+  
+  /* Botón */
+  .btn-enviar {
+    background: #1976D2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-enviar:hover {
+    background: #0D47A1;
+  }
+  
+  /* ===== VALIDACIÓN ===== */
+  .mensaje-error {
+    color: red;
+    font-size: 12px;
+    display: none;
+  }
+  
+  .error input,
+  .error select,
+  .error textarea {
+    border: 1px solid red;
+  }
+  
+  
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabecera */
+  header {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Navegación */
+  nav {
+    background-color: #007bff;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+  
+  nav a.activo {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Botones de color */
+  #btnRojo, #btnVerde, #btnAzul, #btnVisitas {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  #btnRojo:hover { background-color: red; }
+  #btnVerde:hover { background-color: green; }
+  #btnAzul:hover { background-color: blue; }
+  
+  /* Cambiar color body */
+  body.rojo { background-color: #ffdddd; }
+  body.verde { background-color: #ddffdd; }
+  body.azul { background-color: #ddeeff; }
+  
+  /* Mensajes de error */
+  .error {
+    border: 2px solid red;
+  }
+  .mensaje-error {
+    color: red;
+    display: none;
+    font-size: 0.9em;
+  }
+  
