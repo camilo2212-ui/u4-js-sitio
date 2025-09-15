@@ -35,7 +35,7 @@ Acerca
 ![Acerca](img/acerca.png)
 
  Servicios
-![Servicios](img/servicios.png)
+![Servicios](img/servicios.html.png)
 
  Blog
 ![Blog](img/blog.png)
