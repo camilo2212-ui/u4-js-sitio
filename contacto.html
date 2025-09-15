@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimWorld - Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacto">
+  <header>
+    <h1>AnimWorld</h1>
+    <p>Ponte en contacto con nosotros</p>
+    <div id="hora"></div>
+  </header>
+
+  <nav>
+    <a href="index.html" data-page="index">Inicio</a>
+    <a href="acerca.html" data-page="acerca">Acerca</a>
+    <a href="servicios.html" data-page="servicios">Servicios</a>
+    <a href="blog.html" data-page="blog">Blog</a>
+    <a href="articulo1.html" data-page="articulo1">Artículo 1</a>
+    <a href="articulo2.html" data-page="articulo2">Artículo 2</a>
+    <a href="galeria.html" data-page="galeria">Galería</a>
+    <a href="tabla.html" data-page="tabla">Tabla</a>
+    <a href="contacto.html" data-page="contacto">Contacto</a>
+    <a href="legal.html" data-page="legal">Legal</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Formulario de Contacto</h2>
+      <p>Si tienes dudas, sugerencias o quieres colaborar con nosotros, completa el formulario:</p>
+
+      <form id="formContacto">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required>
+        <span class="mensaje-error" style="display:none;color:red;">Campo obligatorio</span><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required>
+        <span class="mensaje-error" style="display:none;color:red;">Correo obligatorio</span><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <span class="mensaje-error" style="display:none;color:red;">Mensaje obligatorio</span><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 - AnimWorld | Contacto</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
