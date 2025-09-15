@@ -43,14 +43,4 @@ Acerca
  Artículo 1
 ![Artículo 1](img/articulo1.png)
 
-Galería
-![Galería](img/galeria.png)
 
- Tabla
-![Tabla](img/tabla.png)
-
- Contacto
-![Contacto](img/contacto.png)
-
- Legal
-![Legal](img/legal.png)
